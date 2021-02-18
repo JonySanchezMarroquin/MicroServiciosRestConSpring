@@ -1,0 +1,29 @@
+package com.bexperr.dash.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/pages/tables")
+public class TablesController {
+	
+	@GetMapping("/data")
+	public String data() {
+		
+		return "pages/tables/data";
+	}
+	
+	@GetMapping("/jsgrid")
+	public String jsgrid() {
+		
+		return "pages/tables/jsgrids";
+	}
+	
+	@GetMapping("/simple")
+	public String simple() {
+		
+		return "pages/tables/simple";
+	}
+
+}

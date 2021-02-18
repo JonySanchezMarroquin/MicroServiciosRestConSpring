@@ -1,0 +1,5 @@
+package com.bexperr.dash.controllers;
+
+public class ChartsController {
+
+}

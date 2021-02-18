@@ -1,0 +1,78 @@
+package com.bexperr.dash.util;
+
+public enum RutasDelSistema {
+
+	//Home
+	INDEX(1,"index"),
+	STARTER(2,"starter"),
+	CHARTJS(3,""),
+	FLOT(4,""),
+	INLINE(5,""),
+	BLANK(6,"pages/examples/blank"),
+	ECOMMERCE(7,"pages/examples/e-commerce"),
+	CONTACTS(8,"pages/examples/contacts"),
+	ERROR404(9,"pages/examples/404"),
+	ERROR505(10,"pages/examples/500"),
+	FORGOTPASSWORD(11,"pages/examples/forgot-password"),
+	INVOICE(12,"pages/examples/invoice"),
+	INVOICEPRINT(13,"pages/examples/invoice-print"),
+	LANGUAGEMENU(14,"pages/examples/language-menu"),
+	LEGACYUSERMENU(15,"pages/examples/legacy-user-menu"),
+	LOCKSCREEN(16,""),
+	LOGIN(17,""),
+	PACE(18,""),
+	PROFILE(19,""),
+	PROJECTADD(20,""),
+	PROJECTDETAIL(21,""),
+	PROJECTEDIT(22,""),
+	PROJECTS(23,""),
+	RECOVERPASSWORD(24,""),
+	REGISTER(25,""),
+	ADVANCED(26,"pages/forms/advanced"),
+	EDITORS(27, "pages/forms/editors"),
+	GENERAL(28, "pages/forms/general"),
+	VALIDATION(29, "pages/forms/validation"),
+	BOXED(30,"pages/layout/boxed"),
+	COLLAPSEDSIDEBAR(31,"pages/layout/collapsed-sidebar"),
+	FIXEDFOOTER(32,"pages/layout/fixed-footer"),
+	FIXEDSIDEBAR(33,"pages/layout/fixed-sidebar"),
+	FIXEDTOPNAV(34,"pages/layout/fixed-topnav"),
+	TOPNAV(35,"pages/layout/top-nav"),
+	TOPNAVSIDEBAR(36,"pages/layout/top-nav-sidebar"),
+	COMPOSE(37,""),
+	MAILBOX(38,""),
+	READMAIL(39,""),
+	CALENDAR(40,"pages/calendar"),
+	GALLERY(41,"pages/gallery"),
+	WIDGETS(42,"pages/widgets"),
+	DATA(43,""),
+	JSGRID(44,""),
+	SIMPLE(45,""),
+	BUTTONS(46,"pages/UI/buttons"),
+	UIGENERAL(47,"pages/UI/general"),
+	ICONS(48,"pages/UI/icons"),
+	MODALS(49,"pages/UI/modals"),
+	NAVBAR(50,"pages/UI/navbar"),
+	RIBBONS(51,"pages/UI/ribbons"),
+	SLIDERS(52,"pages/UI/sliders"),
+	TIMELINE(53,"pages/UI/timeline")
+	;
+	
+	private final int key;
+	private final String path;
+	
+	RutasDelSistema(int key, String path){
+		this.key = key;
+		this.path = path;
+	}
+
+	public int getKey() {
+		return key;
+	}
+
+	public String getPath() {
+		return path;
+	}
+	
+	
+}

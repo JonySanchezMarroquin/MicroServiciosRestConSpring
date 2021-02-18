@@ -1,0 +1,22 @@
+package com.example.di;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.example.di.atributo.Coche;
+import com.example.di.atributo.Motor;
+
+@SpringBootApplication
+public class DependencyInyectionApplication {
+
+	public static void main(String[] args) {
+		//SpringApplication.run(DependencyInyectionApplication.class, args);
+		
+		Motor motor = new Motor("X11", 1981);
+		
+		Coche coche = new Coche("Vw", 1986, motor);
+		
+		System.out.println(coche);
+	}
+
+}

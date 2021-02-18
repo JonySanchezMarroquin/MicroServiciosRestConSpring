@@ -1,0 +1,32 @@
+package com.bexperr.dash.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+@RequestMapping("/charts")
+public class ChartsController {
+	
+	@GetMapping(value = "/chartjs")
+	public String chartjs() {
+		
+		return "pages/charts/chartjs";
+	}
+	
+	
+	
+	@GetMapping(value = "/inline")
+	public String inline() {
+		
+		return "pages/charts/inline";
+	}
+	
+	@RequestMapping(value = "/flot", method = RequestMethod.GET)
+	public String flot() {
+		
+		return "pages/charts/flot";
+	}
+
+}

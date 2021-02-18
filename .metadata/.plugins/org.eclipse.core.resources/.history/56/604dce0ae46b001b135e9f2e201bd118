@@ -1,0 +1,54 @@
+package com.bexperr.dash.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/pages/examples")
+public class ExamplesController {
+	
+	@GetMapping("/404")
+	public String Error404() {
+		
+		return "pages/examples/404";
+	}
+	
+	@GetMapping("/500")
+	public String Error500() {
+		
+		return "pages/examples/500";
+	}
+	
+	@GetMapping("/blank")
+	public String blank() {
+		
+		return "pages/examples/blank";
+	}
+	
+	@GetMapping("/contacts")
+	public String contacts() {
+		
+		return "pages/examples/contacts";
+	}
+	
+	@GetMapping("/e-commerce")
+	public String commerce() {
+		
+		return "pages/examples/e-commerce";
+	}
+	
+	@GetMapping("/forgot-password")
+	public String forgotpassword() {
+		
+		return "pages/examples/forgot-password";
+	}
+	
+	@GetMapping("/invoice")
+	public String invoice() {
+		
+		return "pages/examples/invoice";
+	}
+
+
+}
